@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qohwatuna - Kopi Kita, Cerita Kita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="coffee-loader">
+                <div class="coffee-steam"></div>
+                <div class="coffee-cup"></div>
+            </div>
+            <p>loading....</p>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-btn" class="theme-btn">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>Qohwatuna</h2>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#about" class="nav-link">Tentang</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                    <li><a href="#reviews" class="nav-link">Ulasan</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Qohwatuna</h1>
+            <p class="fade-in">Kopi Kita, Cerita Kita</p>
+            <a href="#menu" class="btn fade-in">Explore Menu</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Tentang Kami</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>Latar Belakang</h3>
+                    <p>Qohwatuna berasal dari bahasa Arab yang berarti “Kopi Kita.” Nama ini mencerminkan keyakinan bahwa kopi bukan hanya sekadar minuman, tetapi juga medium untuk membangun kebersamaan, menyatukan cerita, dan menghadirkan kehangatan dalam setiap pertemuan.
+                    rand kopi ini didirikan oleh Mr.Doni Hermawan sebagai co-founder, dengan visi menghadirkan pengalaman menikmati kopi yang lebih personal, hangat, dan bermakna. Kami percaya bahwa setiap cangkir kopi membawa kisah, perjalanan, dan rasa yang patut dibagikan.
+                    Qohwatuna hadir sebagai ruang di mana siapa pun dapat bertemu, berbagi cerita, dan menikmati momen—karena pada akhirnya, kopi selalu lebih istimewa ketika dinikmati bersama.</p>
+                    
+                    <h3>Filosofi Kami</h3>
+                    <p>Kami percaya bahwa setiap cangkir kopi memiliki kisahnya sendiri. Di Qohwatuna, kami menciptakan ruang di mana cerita-cerita itu dapat berbagi, tumbuh, dan menjadi kenangan yang hangat.</p>
+                    
+                    <h3>Keunggulan Kami</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Biji kopi pilihan yang dipanggang sempurna</li>
+                        <li><i class="fas fa-check"></i> Barista profesional dengan passion pada kopi</li>
+                        <li><i class="fas fa-check"></i> Ambience cozy yang mengundang untuk bercerita</li>
+                        <li><i class="fas fa-check"></i> Menu inovatif yang memadukan tradisi dan modernitas</li>
+                    </ul>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="Samsara.jpg" alt="Qohwatuna Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Signature Menu</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="menu-tabs fade-in">
+                <button class="tab-btn active" data-tab="drinks">Signature Drinks</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+            </div>
+            
+            <div class="menu-content">
+                <div id="drinks" class="menu-category active">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="Qohwatuna latte.jpg" alt="Qohwatuna Latte">
+                            </div>
+                            <div class="menu-details">
+                                <h3>Qohwatuna Latte</h3>
+                                <p class="menu-description">Perpaduan sempurna antara espresso pilihan dan susu steam dengan sentuhan karamel</p>
+                                <p class="menu-price">Rp 38.000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="Espresso.jpg" alt="Arabica Silk">
+                            </div>
+                            <div class="menu-details">
+                                <h3>Arabica Silk</h3>
+                                <p class="menu-description">Espresso single origin arabica dengan tekstur yang halus dan aftertaste yang memukau</p>
+                                <p class="menu-price">Rp 42.000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="CASTLE101 ⚜️.jpg" alt="Caramel Breeze">
+                            </div>
+                            <div class="menu-details">
+                                <h3>Caramel Breeze</h3>
+                                <p class="menu-description">Sensasi karamel yang lembut dengan espresso kuat dan susu creamy</p>
+                                <p class="menu-price">Rp 40.000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="The Best Coconut Mocha Protein Coffee to Fuel Your Day.jpg" alt="Mocha Sahara">
+                            </div>
+                            <div class="menu-details">
+                                <h3>Mocha Sahara</h3>
+                                <p class="menu-description">Perpaduan cokelat premium dengan espresso dan sentuhan kayu manis</p>
+                                <p class="menu-price">Rp 41.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="desserts" class="menu-category">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="7-Step Perfect Homemade Croissant Recipe for Flaky Results.jpg" alt="Croissant">
+                            </div>
+                            <div class="menu-details">
+                                <h3>Butter Croissant</h3>
+                                <p class="menu-description">Pastry buttery yang renyah dengan lapisan-lapisan yang sempurna</p>
+                                <p class="menu-price">Rp 28.000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="Butter Pecan Frosted Fudge Brownies [55 Minutes] - Chasety.jpg" alt="Brownies">
+                            </div>
+                            <div class="menu-details">
+                                <h3>Fudgy Brownies</h3>
+                                <p class="menu-description">Brownies cokelat dengan tekstur lembab dan topping kacang</p>
+                                <p class="menu-price">Rp 32.000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="Cinnamon Roll French Toast [25 Minutes] - Chasety.jpg" alt="French Toast">
+                            </div>
+                            <div class="menu-details">
+                                <h3>Cinnamon French Toast</h3>
+                                <p class="menu-description">Roti Perancis dengan kayu manis dan maple syrup</p>
+                                <p class="menu-price">Rp 35.000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="Classic New York Style Cheesecake_ A Rich, Timeless Delight.jpg" alt="Cheesecake">
+                            </div>
+                            <div class="menu-details">
+                                <h3>New York Cheesecake</h3>
+                                <p class="menu-description">Kue keju klasik dengan crust graham cracker dan berry compote</p>
+                                <p class="menu-price">Rp 38.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Ambience Kami</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="download.jpg" alt="Coffee Shop Interior">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="download (1).jpg" alt="Barista at Work">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="download (2).jpg" alt="Coffee Beans">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="download (3).jpg" alt="Rustic Table">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="download (4).jpg" alt="Coffee Art">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="download (5).jpg"
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Ulasan Pelanggan</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="reviews-container">
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Qohwatuna adalah tempat sempurna untuk melarikan diri dari hiruk pikuk kota. Kopinya luar biasa dan suasana yang hangat membuat saya selalu kembali lagi."</p>
+                    <div class="review-author">
+                        <img src="https://picsum.photos/seed/person1/100/100.jpg" alt="Customer">
+                        <div>
+                            <h4>Sarah Putri</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Sebagai pecinta kopi, saya sangat terkesan dengan kualitas biji kopi yang digunakan. Qohwatuna Latte adalah minuman favorit saya!"</p>
+                    <div class="review-author">
+                        <img src="https://picsum.photos/seed/person2/100/100.jpg" alt="Customer">
+                        <div>
+                            <h4>Budi Santoso</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Tempat yang nyaman untuk bekerja atau sekadar bersantai. Dessert-nya juga enak! Cinnamon French Toast-nya wajib dicoba."</p>
+                    <div class="review-author">
+                        <img src="https://picsum.photos/seed/person3/100/100.jpg" alt="Customer">
+                        <div>
+                            <h4>Maya Anggraini</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card fade-in">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Saya membawa klien ke Qohwatuna dan mereka semua terkesan dengan suasana dan kualitas kopinya. Tempat yang sempurna untuk pertemuan bisnis yang santai."</p>
+                    <div class="review-author">
+                        <img src="https://picsum.photos/seed/person4/100/100.jpg" alt="Customer">
+                        <div>
+                            <h4>Ahmad Fauzi</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Lokasi & Kontak</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Jl. H. Arpah 141, Benda Baru, Kec. Pamulang</p>
+                            <p>Kota Tangerang Selatan, Banten 15415</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Jumat: 08:00 - 22:00</p>
+                            <p>Sabtu - Minggu: 09:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@qohwatuna.co.id</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>(+62) 8817449240</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/62881744920?text=Halo%20Qohwatuna,%20saya%20ingin%20melakukan%20pemesanan" class="btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Via Whatsapp
+                    </a>
+                </div>
+                <div class="map-container fade-in">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.3686835305552!2d106.71396226950405!3d-6.332488566681022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e564d8d93317%3A0x114cd181f0869ad3!2sJl.%20H.%20Arpah%20141%2C%20Benda%20Baru%2C%20Kec.%20Pamulang%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015415!5e0!3m2!1sid!2sid!4v1777434470728!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Qohwatuna</h2>
+                    <p>Kopi Kita, Cerita Kita</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Qohwatuna. All rights reserved.</p>
+                <p>By Doni Hermawan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
